@@ -1,0 +1,56 @@
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 17px;
+}
+.menu{
+    display: flex;
+    .menu__list{
+        margin-right: 60px;
+    }
+    .menu__list-item{
+        display: inline-block;
+        & + .menu__list-item{
+            margin-left: 60px;
+        }
+        a{
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #100000;
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 400;
+        }
+    }
+    .menu__language{
+        li{
+            display: inline-block;
+            a, span{
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #100000;
+                font-size: 24px;
+                line-height: 29px;
+                font-weight: 400;
+            }
+        }
+    }
+    li{
+        a{
+            transition: all .3s;
+            &:hover{
+                color: $hover;
+            }
+        }
+    }
+}
+
+
+
+
+
