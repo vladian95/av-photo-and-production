@@ -6,8 +6,13 @@ html{
 *::after{
     box-sizing: inherit;
 }
+html,
+body{
+    height: 100%;
+}
 a{
     display: inline-block;
+    text-decoration: none;
 }
 ul,
 li{
@@ -15,11 +20,108 @@ li{
     margin: 0;
     list-style: none;
 }
-.active{
-    color: $active;
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content{
+    flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
 }
 .container{
-    max-width: 1270px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0px 15px;
+}
+.main__btn{
+    margin-top: 50px;
+    text-transform: uppercase;
+    border: solid 1px #792796;
+    padding: 20px;
+    border-radius: 2px;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 17px;
+}
+.menu{
+    display: flex;
+    .menu__list-item{
+        display: inline-block;
+        .active-page{
+            color: $active;
+        }
+        & + .menu__list-item{
+            margin-left: 40px;
+        }
+        a{
+            text-transform: uppercase;
+            text-decoration: none;
+            color: rgba(16, 0, 0, 1);
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 400;
+        }
+    }
+    .menu__language{
+        li{
+            display: inline-block;
+            a, span{
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #100000;
+                font-size: 24px;
+                line-height: 29px;
+                font-weight: 400;
+            }
+        }
+    }
+    li{
+        a{
+            transition: all .3s;
+            &:hover{
+                color: $hover;
+            }
+        }
+    }
+}
+
+.footer{
+    background: #100000;
+    color: #fff;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0px;
+    font-size: 12px;
+    font-weight: 400px;
+
+}
+.footer__inner-adress{
+    max-width: 326px;
+    line-height: 15px;
+}
+.social-box{
+    text-align: right;
+    li{
+        display: inline-block;
+        
+        & + li{
+            margin-left: 43px;
+        }
+    }
+}
+.social-box__text{
+    text-align: right;
 }
