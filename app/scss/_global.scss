@@ -69,6 +69,9 @@ body{
     align-items: center;
     padding-block: 17px;
 }
+.header__berger-menu{
+    display: none;
+}
 .menu{
     display: flex;
     .menu__list-item{
@@ -110,7 +113,6 @@ body{
         }
     }
 }
-
 .footer{
     background: #100000;
     color: #fff;
