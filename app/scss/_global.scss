@@ -20,6 +20,9 @@ li{
     margin: 0;
     list-style: none;
 }
+body{
+    font-family: 'Gontserrat', sans-serif;
+}
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -47,6 +50,19 @@ li{
     font-size: 18px;
     line-height: 22px;
 }
+.header-home{
+    height: 100vh;
+    background-image: url(../images/homeBg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #fff; 
+}
 .header__inner{
     display: flex;
     justify-content: space-between;
@@ -67,7 +83,7 @@ li{
             text-transform: uppercase;
             text-decoration: none;
             color: rgba(16, 0, 0, 1);
-            font-size: 18px;
+            font-size: 16px;
             line-height: 21px;
             font-weight: 400;
         }

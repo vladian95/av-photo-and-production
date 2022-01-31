@@ -5,16 +5,9 @@
 
 
 .home{
-    background-image: url(../images/homeBg.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 813px;
-    padding: 102px 40px;
+    padding-top: 102px;
     text-align: center;
     color: #fff;
-    text-transform: uppercase;
-    min-height: 724px;
 }
 .home__logo{
     img{
@@ -26,6 +19,7 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
+    text-transform: uppercase;
 }
 .home__text{
     font-size: 18px;
@@ -46,12 +40,14 @@
     padding: 20px;
     text-transform: uppercase; 
     color: #fff;
+
 }
 .home__adress{
     font-weight: 400;
     font-size: 18px;
-    max-width: 296px;
+    max-width: 303px;
     margin: 0 auto;
+    text-transform: uppercase;
 }
 // lookbook start
 .lookbook__inner{
@@ -193,13 +189,11 @@
 .family__inner{
  display: grid;
  grid-gap: 5px;
- grid-template-columns: repeat(3, 385px);
- grid-template-rows: repeat(6, 575px);
+ 
 
 }
-.amily__inner-item{
-    img{
-
-    }
+.family__inner-item{
+    
 }
+
 // family end
